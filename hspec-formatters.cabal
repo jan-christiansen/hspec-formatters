@@ -1,0 +1,19 @@
+name: hspec-formatters
+version: 0.0.1
+synopsis: Formatters for Hspec test reports
+description: Formatters for Hspec test reports
+author: Jan Christiansen
+maintainer: jan.christiansen@clinical-registry.com
+build-type: Custom
+cabal-version: >= 1.8
+category: Testing
+license: MIT
+
+library
+  build-depends:
+      base == 4.*
+    , hspec >= 1.4
+  hs-source-dirs: src
+  ghc-options: -Wall -W
+  exposed-modules:
+    Test.Hspec.Formatters.Markdown
